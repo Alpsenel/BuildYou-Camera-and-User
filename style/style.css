@@ -1,0 +1,418 @@
+:root {--main: #FE5721;}
+html, body {
+	overflow-x: hidden;
+}
+body {
+	color: var(--main);
+	font-family: 'Open Sans', sans-serif;
+}
+.searchInput {
+	color: var(--main);
+	font-size: 0.875rem;
+}
+h1 {
+	font-size: 2.25rem;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.875rem;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+h4 {
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+h5{
+	font-size: 0.875rem;
+}
+h6 {
+	font-size: 0.5rem;
+	text-decoration: underline;
+}
+p,ul,li,ol {
+	font-size: 0.625rem;
+}
+.challenges ul li h6 {
+	text-decoration: none;
+	margin-top: 5px;
+}
+a {
+	font-size:  0.625rem;
+	text-decoration: underline;
+}
+.row a:hover {
+	text-decoration: none;
+}
+.push {
+	margin-bottom: 54px;
+}
+#profile-section {
+	margin-bottom: 15px;
+}
+.profile {
+	background: white;
+	margin: 60px 0;
+	padding: 0 10px;
+}
+.edit-profile {
+	margin-top: 5px;
+	text-align: right;
+}
+/*
+################################
+               				search Section
+################################
+*/
+#searchSection {
+	position: fixed;
+	top: 0;
+	height: 50px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--main);
+	background:  white;
+	z-index: 3;
+}
+.searchInput {
+	height: 100%;
+	width: 90%;
+}
+.searchButton {
+	float: right;
+	position: relative;
+	top: 10px;
+	border: none;
+	width: 10%;
+	background: transparent;
+	padding-right: 15px;
+	color: var(--main);
+}
+/*
+################################
+               				footer and buttons
+################################
+*/
+#footer {
+	background: white;
+	position: fixed;
+	bottom: 0;
+	height: 54px;
+	width: 100%;
+	text-align: center;
+	border:none;
+	border-top: 1px solid var(--main);
+	z-index: 3;
+}
+.circle {
+	border-radius: 50%;
+	border: 1px solid var(--main);
+	width: 20px;
+	height: 20px;
+	background: transparent;
+	margin: 0 15px;
+	position: relative;
+	bottom: 10px;
+}
+.buttonCircle {
+	background-color: transparent;
+	border: none;
+}
+.fa-plus-circle {
+	color: var(--main);
+}
+
+.button {
+	width: 100%;
+	font-size: 0.625rem;
+	color: white;
+	background-color: var(--main);
+	padding: 7px 15px;
+	border-radius: 15px;
+	border: none;
+}
+.edit-profile-button {
+	display: inline-block;
+	text-align: center;
+	border-radius: 24px;
+	padding: 5px 25px;
+	border: none;
+	width: auto;
+}
+#profileImage {
+	cursor: pointer;
+}
+#imageUpload {
+	display: none;
+}
+#image-container {
+	text-align: center;
+}
+#image-container img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+.circle-section {
+	margin-top: 10px;
+}
+.circle-section a:hover {
+	text-decoration: underline;
+}
+.circles a{
+	border: 2px solid var(--main);
+	border-radius: 50%;
+	text-align: center;
+	padding: 2px;
+	color: var(--main);
+	text-decoration: none;
+}
+.challenges a {
+	font-size: 0.875rem;
+	text-decoration: none;
+	color: var(--main);
+}
+.challenges ul li a {
+	font-size: 0.625rem;
+	text-decoration: none;
+	font-weight: bold;
+}
+.skills a {
+	font-size: 0.875rem;
+	text-decoration: none;
+	color: var(--main);
+
+}
+.skills ul li {
+	font-weight: bold;
+}
+.skills ul li a {
+	font-size: 0.5rem;
+	text-decoration: none;
+	font-weight: normal;
+}
+.nameSurname {
+	text-align: center;
+}
+.challenge-header {
+	margin-top: 20px;
+}
+.arrow {
+	display: inline-block;
+	position: absolute;
+	background: url("../images/skillsDown.png") no-repeat;
+	background-size: contain;
+	top: 15px;
+	right: 25px;
+	width: 15px;
+    height: 12px;
+}
+.arrow-reverse {
+	display: inline-block;
+	position: absolute;
+	background: url("../images/skillsUp.png") no-repeat;
+	background-size: contain;
+	top: 15px;
+	right: 25px;
+	width: 15px;
+    height: 12px;
+}
+#challenge-skills a:hover {
+	text-decoration: none;
+}
+.skillsLine {
+	width: 100%;
+	background-color: var(--main);
+	height: 1px;
+	margin-top: 10px;
+}
+.skills-header {
+	margin-top: 20px;
+}
+.dashboard h2 {
+	margin: 15px 0;
+}
+.bold {
+	font-weight: bold;
+}
+.normal {
+	font-weight: normal;
+}
+.col-12 .bold {
+	margin-top: 16px;
+}
+.interact {
+	font-size: 0.5rem;
+	font-weight: normal;
+}
+.border-fluid {
+	border: 2px solid var(--main);	
+}
+.inner-border {
+	border: 1px solid var(--main);
+	padding: 20px 20px 0 20px;
+}
+.smallImg {
+	border-radius: 50%;
+}
+.inner-border:first-child {
+	margin-bottom: 10px;
+}
+.top-margin h6 {
+	text-decoration: none;
+	margin: 10px 0;
+}
+.video {
+	height: 265px;
+	width: 100%;
+	border: 1px solid var(--main); 
+}
+.under-video {
+	padding: 10px 0;
+	border: 1px solid var(--main);
+}
+.under-video .button {
+	width: auto;
+}
+.top-margin {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.top-margin .col-12 a {
+	color: var(--main);
+	text-decoration: none;
+}
+
+
+/*
+############
+updated.html
+############
+*/
+.container.notMain {
+	margin-top: 60px;
+}
+#search {
+	width: 100%;
+	border: none;
+	padding: 20px;
+	border-bottom: 1px solid var(--main);
+	color: var(--main);
+	font-size: 0.9rem;
+}
+#search::placeholder{
+	color: var(--main);
+	font-size: 0.875rem;
+}
+.fromTop {
+	margin-top: 200px;
+}
+.outline {
+	border: 2px solid var(--main);
+	padding: 45px 15px 25px;
+	border-radius: 10px;
+	text-align: center;
+}
+#search-icon {
+	background: url("../images/search.png") no-repeat;
+	background-size: contain;
+	padding: 13px;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+}
+.closeButton {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	color: var(--main);
+}
+#main-feed {
+	margin-top: 15px;
+}
+
+/*
+############
+profile-picture.html
+############
+*/
+#profile-image {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+.profilePicture .imageSection {
+	text-align: center;
+}
+.profilePicture p {
+	text-decoration: underline;
+}
+.button-section .button {
+	margin: 5px 0;
+}
+
+/*
+############
+edit-profile.html
+############
+*/
+.fa-check-circle {
+	color: var(--main);
+}
+.top-header {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.fa-pencil {
+	color: white;
+}
+#editProfileOk {
+	border: none;
+	background: transparent;
+}
+#openGallery {
+	height: 40px;
+	width: 40px;
+	background-color: var(--main);
+	border: none;
+	border-radius: 50%;
+	position: relative;
+	z-index: 3;
+	right: 5%;
+} 
+#image-container {
+	text-align: center;
+}
+#image-container img {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 20px;
+}
+#getFile {
+	display: none;
+}
+.row form input{
+	width: 100%;
+	border: 1px solid var(--main);
+	margin: 5px 0;
+	padding: 5px;
+	color: var(--main);
+	font-size: 0.625rem;
+}
+.col-12 form input[name=description]{
+	margin-top: 40px;
+	height: 150px;
+	font-size: 0.625rem;
+}
+
+input::placeholder {
+	color: var(--main);
+	font-size: 0.625rem;
+}

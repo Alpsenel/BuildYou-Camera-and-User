@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="it">
+  	<head>
+    	<title>Edit-Profile</title>
+
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+	</head>
+
+	<body>
+<!--
+####################
+			Search Section
+####################
+-->
+	  <div id="searchSection">
+	  	<input class="searchInput" type="text" name="search" />
+		<button class="searchButton"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+	  </div>
+		<div class="container notMain">
+			<div class="row top-header">
+				<div class="col-10"><h1>edit profile</h1></div>
+				<button id="editProfileOk"><i class="fa fa-check-circle fa-2x" aria-hidden="true"></i></button>
+			</div>
+			
+			<div class="row">
+				<div class="col-12" id="image-container">
+					<img id="profileImage" src="https://lorempixel.com/100/100/" />
+					<button id="openGallery"><i class="fa fa-pencil fa-lg"></i></button>
+					<input type="file" id="getFile" accept=".jpg, .jpeg, .png" />
+				</div> 
+			</div>
+			<div class="row justifiy-content-center">
+				<div class="col-12">
+					<p id="outputMessage"></p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12">
+					<form action="">
+						<input name="firstname" type="text" placeholder="$name"  />
+						<input name="surname" type="text" placeholder="$surname"  />
+						<input name="email" type="email" placeholder="$email">
+						<input name="description" type="text" placeholder="$descripton (max. 200ch)" />
+					</form>
+				</div>
+			</div>
+		</div>
+<!--
+####################
+			Footer Section
+####################
+-->
+	  <div id="footer">
+		  <button class="circle"></button>
+		  <button class="circle"></button>
+		  <button class="buttonCircle"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></button>
+		  <button class="circle"></button>
+		  <button class="circle"></button>
+	  </div>				
+		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://use.fontawesome.com/8574fc8ae8.js"></script>
+		<script src="functions/edit-profile-functions.js"></script>
+	</body>
+</html>

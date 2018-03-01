@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <title>Profile</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+	  	<link rel="stylesheet" href="style/style.css" type="text/css" />
+  </head>
+  <body>
+    
+<!--
+####################
+			Search Section
+####################
+-->
+	  <div id="searchSection">
+	  	<input class="searchInput" type="text" name="search" />
+		<button class="searchButton"><i class="fa fa-search fa-lg" aria-hidden="true"></i></button>
+	  </div>
+	  
+	  
+	 <section class="profile">
+		 <div class="container">
+			<div class="row" id="profile-section">
+				<div class="col-4"><h1>profile</h1></div>
+				<div class="col-8 edit-profile"><button id="edit-profile" class="button edit-profile-button">edit profile</button></div>
+			</div>
+			<div class="row">
+				<div class="col-12" id="image-container">
+					<img id="profileImage" src="https://lorempixel.com/100/100/" />
+					<input id="imageUpload" type="file" name="profile_photo" placeholder="Photo" >
+				</div> 
+			</div>
+			 <div class="row justify-content-center circle-section">
+			 	<div class="col-2"><p class="circles"><a href="#">CH</a></p></div>
+				 <div class="col-2"><p class="circles"><a href="#">SP</a></p></div>
+				 <div class="col-2"><p class="circles"><a href="#">CO</a></p></div>
+			 </div>
+			 
+			 <div class="row">
+			 	<div class="col-12 nameSurname">
+					<h3>$name $surname</h3>
+				 </div>
+			 </div>
+			 <div class="row">
+			 	<div class="col-12 description">
+					<p>$descripton - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				 </div>
+			 </div>
+			 
+			 
+			 <div class="row challenge-header">
+			 	<div class="col-12">
+				 	<h4>Challenges</h4>
+				 </div>
+			 </div>
+			 <div class="row" id="challenge-skills">
+					 <div class="col-12">
+						 <div id="challengeAccordion" data-children=".challenges">
+						  	<div class="challenges">
+								<a data-toggle="collapse" data-parent="#challengeAccordion" href="#currentChallenges" aria-expanded="true" aria-controls="currentChallenges">
+								  Current Challenges <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="currentChallenges" class="collapse" role="tabpanel">
+									<ul>
+										<li><a href="#">$current-challenge-I-own-title-with-link-1</a><br />
+											<h6>$challenge-category - $challenge-status</h6>
+										</li>
+										<li><a href="#">$current-challenge-I-own-title-with-link-2</a><br />
+											<h6>$challenge-category - $challenge-status</h6>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				 
+				 <div class="col-12">
+						 <div id="challengeAccordion2" data-children=".challenges">
+						  	<div class="challenges">
+								<a data-toggle="collapse" data-parent="#challengeAccordion2" href="#completedChallenges" aria-expanded="true" aria-controls="completedChallenges">
+								  Completed Challenges <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="completedChallenges" class="collapse" role="tabpanel">
+									<ul>
+										<li><a href="#">$completed-challenge-title-with-link-1</a><br />
+											<h6>$challenge-category</h6>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				 
+				 <div class="col-12">
+						 <div id="challengeAccordion3" data-children=".challenges">
+						  	<div class="challenges">
+								<a data-toggle="collapse" data-parent="#challengeAccordion3" href="#challengesISupport" aria-expanded="true" aria-controls="challengesISupport">
+								  Challenges I support <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="challengesISupport" class="collapse" role="tabpanel">
+									<ul>
+										<li><a href="#">$challenge-I-support-title-with-link-1</a><br />
+											<h6>$challenge-category</h6>
+										</li>
+										<li><a href="#">$challenge-I-support-title-with-link-2</a><br />
+											<h6>$challenge-category</h6>
+										</li>
+										<li><a href="#">$challenge-I-support-title-with-link-3</a><br />
+											<h6>$challenge-category</h6>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				 
+				 <div class="col-12">
+						 <div id="challengeAccordion4" data-children=".challenges">
+						  	<div class="challenges">
+								<a data-toggle="collapse" data-parent="#challengeAccordion4" href="#challengesICoach" aria-expanded="true" aria-controls="challengesICoach">
+								  Challenges I coach <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="challengesICoach" class="collapse" role="tabpanel">
+									<ul>
+										<li><a href="#">$challenge-I-coach-title-with-link-1</a><br />
+											<h6>$challenge-category - $challenge-status</h6>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			 
+			 
+			 
+			 <div class="row skills-header">
+			 	<div class="col-12">
+				 	<h4>Skills</h4>
+				 </div>
+			 </div>
+			 <div class="row" id="skills-skills">
+					 <div class="col-12">
+						 <div id="skillsAccordion" data-children=".skills">
+						  	<div class="skills">
+								<a data-toggle="collapse" data-parent="#skillsAccordion" href="#skillsToAcquire" aria-expanded="true" aria-controls="skillsToAcquire">
+								  Skills to acquire <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="skillsToAcquire" class="collapse" role="tabpanel">
+									<ul>
+										<li>$skills-to-acquire-1<br />
+											<a href="#">$related-challenge-title-with-link-1</a>, 
+											<a href="#">$related-challenge-title-with-link-2</a>, 
+											<a href="#">$related-challenge-title-with-link-3</a>
+										</li>
+										<li>$skills-to-acquire-2<br />
+											<a href="#">$related-challenge-title-with-link-1</a>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+				 <div class="col-12">
+						 <div id="skillsAccordion2" data-children=".skills">
+						  	<div class="skills">
+								<a data-toggle="collapse" data-parent="#skillsAccordion2" href="#acquiredSkills" aria-expanded="true" aria-controls="acquiredSkills">
+								  Acquired Skills <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="acquiredSkills" class="collapse" role="tabpanel">
+									<ul>
+										<li>$acquired-skill-1<br />
+											<a href="#">$related-challenge-title-with-link-1</a>,
+												<a href="#">$related-challenge-title-with-link-2</a>,
+												<a href="#">$related-challenge-title-with-link-3</a>
+										</li>
+										<li>$acquired-skill-2<br />
+											<a href="#">$related-challenge-title-with-link</a>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				 
+				 <div class="col-12">
+						 <div id="skillsAccordion3" data-children=".skills">
+						  	<div class="skills">
+								<a data-toggle="collapse" data-parent="#skillsAccordion3" href="#acquiredSkillsThroughCoaching" aria-expanded="true" aria-controls="acquiredSkillsThroughCoaching">
+								  Acquired Skills through challenges<br /> i have coached <span class="arrow"></span>
+								</a>
+								<hr class="skillsLine" />
+								<div id="acquiredSkillsThroughCoaching" class="collapse" role="tabpanel">
+									<ul>
+										<li>$acquired-skill-1<br />
+											<a href="#">$related-challenge-title-with-link-1</a>
+										</li>
+										<li>$acquired-acquire-2<br />
+											<a href="#">$related-challenge-title-with-link-2</a>
+										</li>
+										<li>$acquired-acquire-3<br />
+											<a href="#">$related-challenge-title-with-link-3</a>
+										</li>
+									</ul>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			 
+			 
+		 </div>
+	 </section>
+	  
+	  <section class="dashboard">
+		<div class="container">
+			  <div class="row">
+				  <div class="col-12">
+					  <h4>Dashboard</h4>
+				  </div>
+			  </div>
+		</div>
+		  <div class="container-fluid border-fluid">
+			  <div class="container">
+				  <div class="row">
+					  <div class="col-12">
+					  	<p class="bold">This is an included post! <span class="interact">click on it to interact into the challenge dashboard!</span></p>
+					  </div>
+				  </div>
+				  <div class="inner-border">
+				  	  <div class="row">
+					 	 <div class="col-3"><img class="smallImg" src="https://lorempixel.com/75/75/" /></div>
+						 <div class="col-7"><p class="bold">$name $surname <br /><span class="normal"> $location</span></p></div>
+						  <div class="col-2 circle-section"><p class="circles"><a href="#">SP</a></p></div>
+					  </div>
+					  <div class="row top-margin">
+					  	  <div class="col-12">
+						  	  <a class="bold" href="#">$challenge-tittle-with-link <br /></a>
+							  <h6>$inserted-text - cras quis nulla comodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum</h6>
+						  </div>
+					  </div>
+					  
+				  </div>
+				<div class="row">
+					<div class="col-12">
+						<div class="video"><iframe width="100%" height="265" src="https://www.youtube.com/embed/w5ggWRtfOHg?ecver=1" frameborder="0" gesture="media" allowfullscreen></iframe></div>
+					  </div>
+				</div>
+				  <div class="container">
+				  <div class="row under-video">
+				  	<div class="col"><p>$n-support <br />$n-comment <br />$n-include</p></div>
+					<div class="col-8">
+						<div class="row">
+						<div class="col-4" style="padding-left: 7px;"><button class="button">support</button></div>
+					  <div class="col-4" style="padding-left: 7px;"><button class="button">comment</button></div>
+					  <div class="col-4" style="padding-left: 10px;"><button class="button">include</button></div>
+					</div>
+				  </div>
+					  </div>
+			  </div>
+			  </div>
+			  
+		  </div>
+	  </section>
+	  
+	  <div class="push"></div>
+<!--
+####################
+			Footer Section
+####################
+-->
+	  <div id="footer">
+		  <button class="circle"></button>
+		  <button class="circle"></button>
+		  <button class="buttonCircle"><i class="fa fa-plus-circle fa-3x" aria-hidden="true"></i></button>
+		  <button class="circle"></button>
+		  <button class="circle"></button>
+	  </div>		>  
+	  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	  <script src="https://use.fontawesome.com/8574fc8ae8.js"></script>
+	  <script src="functions/functions.js"></script>
+	  
+  </body>
+</html>
